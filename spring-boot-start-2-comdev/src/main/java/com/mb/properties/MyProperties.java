@@ -14,7 +14,7 @@ import lombok.Setter;
 public class MyProperties {
 	@Value("${com.mb.name}")
 	private String name;
-	
+
 	@Value("${com.mb.description}")
 	private String description;
 }

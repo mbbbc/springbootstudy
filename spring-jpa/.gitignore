@@ -1,0 +1,10 @@
+HELP.md
+target/
+!**/src/main/**
+!**/src/test/**
+
+.mvn
+mvnw.cmd
+mvnw
+spring-jpa.iml
+/src/main/resources/application-dev.properties

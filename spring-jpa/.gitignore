@@ -7,4 +7,3 @@ target/
 mvnw.cmd
 mvnw
 spring-jpa.iml
-/src/main/resources/application-dev.properties

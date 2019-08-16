@@ -33,4 +33,10 @@ public class HelloWorldControllerTest {
 				.andReturn();
 	}
 
+	@Test
+	public void testLog(){
+		System.out.println(1 / 0);
+	}
+
+
 }

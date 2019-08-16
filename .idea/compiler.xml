@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jpa_study" />
+        <module name="spring-boot-9-scheduler" />
+        <module name="spring-boot-start" />
+        <module name="spring-boot-start-2-comdev" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jpa_study" target="1.8" />
+      <module name="spring-boot-9-scheduler" target="1.8" />
+      <module name="spring-boot-start" target="1.8" />
+      <module name="spring-boot-start-2-comdev" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

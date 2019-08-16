@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
+import lombok.experimental.FieldNameConstants;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,6 +16,7 @@ import javax.persistence.Id;
 @Accessors(chain = true)
 @NoArgsConstructor
 @AllArgsConstructor
+@FieldNameConstants
 public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)

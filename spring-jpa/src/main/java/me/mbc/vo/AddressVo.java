@@ -1,0 +1,1 @@
+package me.mbc.vo;import java.util.Date;public interface AddressVo {    String getLocation();    String getCreateDate();    String getAdminId();    PartAdmin getAdmin();    interface PartAdmin{        String getName();        Date getBirthDate();        Date getCreateDate();    }}

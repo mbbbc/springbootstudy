@@ -1,0 +1,1 @@
+package me.mbc.repository.customize;import me.mbc.entity.customize.Admin;public interface AdminRepository extends MyBaseRepositoryBeanInterface<Admin, Long> {}

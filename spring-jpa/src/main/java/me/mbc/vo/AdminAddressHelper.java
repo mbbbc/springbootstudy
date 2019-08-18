@@ -1,0 +1,1 @@
+package me.mbc.vo;import me.mbc.entity.customize.Address;import org.springframework.stereotype.Component;@Componentpublic class AdminAddressHelper{    public String concatAdminAndAddress(Address address){        return address.getAdmin().getName() + address.getLocation();    }}

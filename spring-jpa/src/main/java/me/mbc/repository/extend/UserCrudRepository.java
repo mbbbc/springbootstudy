@@ -1,6 +1,6 @@
-package me.mbc.repository;
+package me.mbc.repository.extend;
 
-import me.mbc.entity.User;
+import me.mbc.entity.extend.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

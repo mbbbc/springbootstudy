@@ -1,0 +1,1 @@
+package me.mbc.vo;import org.springframework.beans.factory.annotation.Value;public interface AdminAddress{    @Value("#{ @adminAddressHelper.concatAdminAndAddress(target)}")    String getAdminAddress();//    @Value("#{args[0] + ' ' + target.location}")//    String getAdminAddress(String midStr);}

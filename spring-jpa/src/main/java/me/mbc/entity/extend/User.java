@@ -1,4 +1,4 @@
-package me.mbc.entity;
+package me.mbc.entity.extend;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

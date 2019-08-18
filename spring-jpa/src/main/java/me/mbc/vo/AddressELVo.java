@@ -1,0 +1,1 @@
+package me.mbc.vo;import org.springframework.beans.factory.annotation.Value;public interface AddressELVo {    @Value("#{target.admin.name + '的地址是' + target.location}")    String getAdminAddress();}

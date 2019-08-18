@@ -1,0 +1,1 @@
+package me.mbc.vo;import lombok.AllArgsConstructor;import lombok.Getter;import lombok.Setter;import lombok.ToString;import me.mbc.entity.customize.Admin;import java.util.Date;@Getter@Setter@ToString@AllArgsConstructorpublic class AdminAddressDto {    String location;    Date createDate;    Long adminId;    Admin admin;}

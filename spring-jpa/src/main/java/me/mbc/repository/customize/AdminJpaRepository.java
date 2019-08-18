@@ -1,0 +1,1 @@
+package me.mbc.repository.customize;import me.mbc.entity.customize.Admin;import org.springframework.data.jpa.repository.JpaRepository;public interface AdminJpaRepository extends JpaRepository<Admin, Long> {}

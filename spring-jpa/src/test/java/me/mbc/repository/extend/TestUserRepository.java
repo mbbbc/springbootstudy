@@ -1,7 +1,6 @@
-package me.mbc.repository;
+package me.mbc.repository.extend;
 
-import me.mbc.entity.User;
-import me.mbc.repository.UserCrudRepository;
+import me.mbc.entity.extend.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

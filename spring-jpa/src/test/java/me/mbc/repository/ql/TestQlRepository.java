@@ -7,6 +7,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.JpaSort;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -84,6 +86,67 @@ public class TestQlRepository {
         }
     }
 
+    /**
+     * 测试分页1
+     */
+    @Test
+    public void testFindUserAndPage(){
+        Page<User> page = userRepository.findByNameAndPage("test", PageRequest.of(1 - 1, 20, Sort.by("name")));
+        for(User user : page){
+            System.out.println(user);
+        }
+    }
+
+
+    /**
+     * 测试分页2
+     */
+    @Test
+    public void testFindUserAndPageUseSql(){
+        Page<User> page = userRepository.findByNameAndPageUseSql("test", PageRequest.of(1 - 1, 20, Sort.by("name")));
+        for(User user : page){
+            System.out.println(user);
+        }
+    }
+
+    /**
+     * 测试@Param的用法
+     */
+    @Test
+    public void testParam(){
+        List<User> list = userRepository.findUserByEmailAndName("test1", "132@qq.com");
+        for(User user : list){
+            System.out.println(user);
+        }
+
+    }
+
+    /**
+     * 测试在@Query中使用SPEL
+     */
+    @Test
+    public void testUseSpelOnQuery(){
+        List<User> list = userRepository.findUserByNameUserSpel("test");
+        for (User user : list){
+            System.out.println(user);
+        }
+    }
+
+    /**
+     * 测试@Modify
+     */
+    @Test
+    public void testUpdateUserEmailByName(){
+        int count = userRepository.UpdateUserEmailByName("test1","test1@qq.com");
+        System.out.println("------------------");
+        System.out.println("count = " + count);
+    }
+    @Test
+    public void testDeleteUserByName(){
+        int count = userRepository.deleteUserByName("test2");
+        System.out.println("------------------");
+        System.out.println("count = " + count);
+    }
 
 
 }
